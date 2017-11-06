@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Translipsur</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+body {background:url('/images/fondo.jpg') repeat 0 0;}
+ nav {background-color: black;}
+.footer-4cln {padding: 30px 0;background-color: black; font-size: 13px; color:#959ca3;}
+.footer-4cln a {color:#959ca3;}
+.footer-4cln a:hover {color:#fff;}
+.footer-4cln h6 {font-size: 15px; text-transform: uppercase; font-weight: bold; color: #fff;}
+.footer-4cln .footernews {border: none;}
+.footer-4cln .help-block {font-size: 11px; color:#959ca3;}
+.footer-4cln hr {  color: #3b4958; border: 0; background-color: #3b4958; height: 2px;}
+.footer-4cln-bar span{display:block;float:left;margin:10px 20px 10px 0px;font-size:18px;}
+.footer-4cln-bar span i{top:2px;font-size:20px; margin-right: 6px;}
+.footer-4cln-bar span.address{float:right;text-align:right;margin:5px 0px 10px 0px;font-size:13px;line-height:18px}
+.footer-social {display:block;float:left;margin:10px 30px 10px 10px;font-size:20px;}
+.footer-social i {padding: 0 6px;}
+.footer-4cln .social-google {color: #da573b;}
+.footer-4cln .social-twitter {color: #1daee3;}
+.footer-4cln .social-facebook {color: #4c699e;}
+.footer-4cln .social-linkedin {color: #4875B4;}
+.footer-4cln .social-skype {color: #00aff0;}
+
+@import "bourbon";
+
+body {
+  background: #eee !important;  
+}
+
+.wrapper {  
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);  
+
+  .form-signin-heading,
+  .checkbox {
+    margin-bottom: 30px;
+  }
+
+  .checkbox {
+    font-weight: normal;
+  }
+
+  .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    @include box-sizing(border-box);
+
+    &:focus {
+      z-index: 2;
+    }
+  }
+
+  input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  input[type="password"] {
+    margin-bottom: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+ul.dropdown-lr {
+  width: 300px;
+}
+
+/* mobile fix */
+@media (max-width: 768px) {
+  .dropdown-lr h3 {
+    color: #eee;
+  }
+  .dropdown-lr label {
+    color: #eee;
+  }
+}
+</style>
+<body>
+<nav id="header" class="navbar navbar-fixed-top bg-faded">
+  <div id="header-container" class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img src="images/logo1.jpg" class="img-rounded" alt="Cinque Terre" width="76" height="59">
+                    
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Quienes Somos</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="http://phpoll.com/login" class="dropdown-toggle" data-toggle="dropdown">Log In <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-lr animated slideInRight" role="menu">
+            <div class="col-lg-12">
+              <div class="text-center">
+                <h3><b>Log In</b></h3></div>
+              <form id="ajax-login-form" action="http://phpoll.com/login/process" method="post" role="form" autocomplete="off">
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-xs-7">
+                      <input type="checkbox" tabindex="3" name="remember" id="remember">
+                      <label for="remember"> Remember Me</label>
+                    </div>
+                    <div class="col-xs-5 pull-right">
+                      <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="text-center">
+                        <a href="http://phpoll.com/recover" tabindex="5" class="forgot-password">Forgot Password?</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" class="hide" name="token" id="token" value="a465a2791ae0bae853cf4bf485dbe1b6">
+              </form>
+            </div>
+          </ul>
+        </li>
+      
+  </div>
+      </ul>
+    </div><!-- /.nav-collapse -->
+  </div><!-- /.container -->
+</nav><!-- /.navbar -->
+
+<div class="container">
+ 
+<div class="wrapper">
+    <form class="form-signin">       
+      <h2 class="form-signin-heading">Login</h2>
+      <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+      <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+      <label class="checkbox">
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+      </label>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
+    </form>
+  </div>
+
+
+</div>
+<div class="row">
+<div class="footer-4cln">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-5 col-xs-6">
+                <h6>SERVICIOS</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Transporte de Concentrado</a></li>
+                    <li><a href="#">Transporte de Carga Pesada</a></li>
+                    <li><a href="#">Alquiler de Unidades</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                  <h6>PRODUCTOS</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Máquina Seca</a></li>
+                    <li><a href="#">Máquina Servida</a></li>
+                    <li><a href="#">Máquina Completa</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3 col-xs-6">
+                  <h6>CONTÁCTENOS</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#">+51 958300453</a></li>
+                    <li><a href="#">+51 987654321</a></li>
+                    <li><a href="#">gerencia@translipsur.com</a></li>
+                    
+                  </ul>
+              </div>
+            </div>
+          </div>
+        <div class="col-md-4" align="center">
+            
+            <img src="images/logo-2.png" class="img-rounded" alt="Cinque Terre" width="152" height="100">
+        </div>
+    </div>
+    <hr>
+      <div class="footer-4cln-bar">
+        <div class="footer-social">
+            <a class="social-facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="social-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="social-google" href="#"><i class="fa fa-google-plus"></i></a>
+        </div>
+        <span class="address">Copyright &copy; Translipsur, Inc. 2017<br/> Challhuahuacho - Nueva Fuerabamba, calle 3 Lte V-13</span>
+      </div>
+  </div>
+</div>
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Translipsur</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  
+
+</head>
+<style type="text/css">
+body {background:url('/images/fondo.jpg') repeat 0 0;
+float:center;
+   background-color: #A7A7A7;
+   margin: 10px 0 0 5px;}
+ nav {background-color: black;}
+.footer-4cln {padding: 30px 0;background-color: black; font-size: 13px; color:#959ca3;}
+.footer-4cln a {color:#959ca3;}
+.footer-4cln a:hover {color:#fff;}
+.footer-4cln h6 {font-size: 15px; text-transform: uppercase; font-weight: bold; color: #fff;}
+.footer-4cln .footernews {border: none;}
+.footer-4cln .help-block {font-size: 11px; color:#959ca3;}
+.footer-4cln hr {  color: #3b4958; border: 0; background-color: #3b4958; height: 2px;}
+.footer-4cln-bar span{display:block;float:left;margin:10px 20px 10px 0px;font-size:18px;}
+.footer-4cln-bar span i{top:2px;font-size:20px; margin-right: 6px;}
+.footer-4cln-bar span.address{float:right;text-align:right;margin:5px 0px 10px 0px;font-size:13px;line-height:18px}
+.footer-social {display:block;float:left;margin:10px 30px 10px 10px;font-size:20px;}
+.footer-social i {padding: 0 6px;}
+.footer-4cln .social-google {color: #da573b;}
+.footer-4cln .social-twitter {color: #1daee3;}
+.footer-4cln .social-facebook {color: #4c699e;}
+.footer-4cln .social-linkedin {color: #4875B4;}
+.footer-4cln .social-skype {color: #00aff0;}
+
+
+ul.dropdown-lr {
+  width: 300px;
+}
+
+/* mobile fix */
+@media (max-width: 768px) {
+  .dropdown-lr h3 {
+    color: #eee;
+  }
+  .dropdown-lr label {
+    color: #eee;
+  }
+}
+</style>
+<body>
+<nav id="header" class="navbar navbar-fixed-top bg-inverse">
+  <div id="header-container" class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      	<span class="sr-only">abrir</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img src="images/logo1.jpg" class="img-rounded" alt="Cinque Terre" width="76" height="59">
+                    
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#quienes">Quienes Somos</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="http://phpoll.com/login" class="dropdown-toggle" data-toggle="dropdown">Log In <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-lr animated slideInRight" role="menu">
+            <div class="col-lg-12">
+              <div class="text-center">
+                <h3><b>Log In</b></h3></div>
+              <form id="ajax-login-form" action="#" method="post" role="form" autocomplete="off">
+                <div class="form-group">
+                  <label for="username">User</label>
+                  <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-xs-12" align="center">
+                      <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="text-center">
+                        <a href="#" tabindex="5" class="forgot-password">Olvidó su contraseña?</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" class="hide" name="token" id="token" value="a465a2791ae0bae853cf4bf485dbe1b6">
+              </form>
+            </div>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.nav-collapse -->
+  </div><!-- /.container -->
+</nav><!-- /.navbar -->
+
+        <div class="container">
+  <div id="carousel-example" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example" data-slide-to="1"></li>
+    <li data-target="#carousel-example" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <a href="#"><img src="images/bambas.jpg" /></a>
+      <div class="carousel-caption">
+        <h3>TRANSPORTE</h3>
+        <p>de concentrado de minerales</p>
+      </div>
+    </div>
+    <div class="item">
+      <a href="#"><img src="images/volvo2.jpg" /></a>
+      <div class="carousel-caption">
+        <h3>TRANSPORTE</h3>
+        <p>de Carga Pesada y Especializada</p>
+      </div>
+    </div>
+    <div class="item">
+      <a href="#"><img src="images/alquiler.jpg" /></a>
+      <div class="carousel-caption">
+        <h3>ALQUILER</h3>
+        <p>de Unidades</p>
+      </div>
+    </div>
+
+  </div>
+
+  <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+
+</div>
+<a name="servicios"></a>
+<div class="row">
+<br>
+<br>
+  <h2 align="center"><strong>SERVICIOS</strong></h2>
+  <big><p>Nuestros servicios son integrales y profesionales que tiene como pilares brindar servicios integrales con equipos en perfecto estado, respuesta rápida y un servicio personalizado según los estándares solicitados por nuestros clientes, reconocimiento en terreno de las solicitudes del cliente, uso de la tecnología para procesos de comunicación de la empresa y los clientes, servicio técnico permanente, cercano a las obras y contar con página web con información de la empresa acerca de la disponibilidad de trabajo, para los clientes registrados.</p></big>
+
+  <big><p>Se pretende ser uno de los referentes máximos de la zona, buscando no sólo ser una solución en términos de tiempo, sino que un apoyo experto de parte de un grupo humano preocupado de que sus clientes puedan realizar sus respectivos proyectos de la mejor manera posible y nos vean como un aliado para lograrlo.</p></big>
+  <ul>
+    <li><h3><strong>Transporte de Concentrado de Minerales</strong></h3></li>
+    <big><p>Transporte de concentrado de minerales desde según requerimiento de cliente, que sueles ser desde planta concentradora-almacen hacia lo puertos de embarque, modelo seguro e inno-vador de transporte.</p></big>
+
+    <img src="images/miner.jpg" class="img-rounded" alt="Cinque Terre" width="600" height="236">
+
+    <li><h3><strong>Transporte de Carga Pesada y Especializada</strong></h3></li>
+    <big><p>Transporte de carga pesada y especializada como carga pesada de maquinarias, pieza y equipos de gran dimensión, combustibles líquidos, distribución de GLP Transporte de explosivos, CalGas natural comprimido, entre otros similares.</p></big>
+
+    <img src="images/volvo1.jpg" class="img-rounded" alt="Cinque Terre" width="600" height="236">
+
+    <li><h3><strong>Alquiler de Unidades</strong></h3></li>
+    <big><p>Alquiler de unidades para carga pesada y especializada como Tractos, semitractos como plataformas, camabajas, entre otros según requerimiento como maquina seca, servida o a todo costo.</p></big>
+
+    <img src="images/alquiler.jpg" class="img-rounded" alt="Cinque Terre" width="600" height="236" />
+    <a name="productos"></a>
+  </ul>
+ 
+  <br>
+  <br>
+  <h2 align="center"><strong>PRODUCTOS</strong></h2>
+  <big><p>El servicio que prestara la empresa “TRANSLIPSUR S.A.C.”, es el alquiler de maquinaria para carga pesada sea maquina seca, servida y/o completa, además de transporte de concentrado de minerales. Cuando el cliente que solicite el servicio ha contactado a los supervisores o al gerente, se establecerán las condiciones de alquiler de la unidad y de transporte en caso de concentrado de minerales.</p></big>
+  <ul>
+    <li><h3><strong>Máquina Seca</strong></h3></li>
+    <big><p>La cotización que se hace llegar solo es exclusivo del flete de la maquinaria para carga como puede ser el tracto con o sin semitracto, según lo solicite.</p></big>
+
+    <img src="images/seca.jpg" class="img-rounded" alt="Cinque Terre" width="600" height="336">
+
+    <li><h3><strong>Máquina Servida</strong></h3></li>
+    <big><p>La cotización que se hace llegar solo es exclusivo del flete de la maquinaria para carga como puede ser el tracto con o sin semitracto, según lo solicite.</p></big>
+
+    <img src="images/servida.jpg" class="img-rounded" alt="Cinque Terre" width="650" height="450">
+
+    <li><h3><strong>Máquina Completa</strong></h3></li>
+    <big><p>La cotización económica y técnica que se hace llega hace referencia al flete de la maquinaria para carga, de conductores calificados e incluye con combustible, y adicionales que considere el cliente para los servicios requeridos.<br><strong>a) Características</strong></p></big>
+
+    <img src="images/servida1.jpg" class="img-rounded" alt="Cinque Terre" width="600" height="336">
+    <a name="quienes"></a>
+
+  </ul>
+  <br>
+  <br>
+  <h2 align="center"><strong>QUIENES SOMOS</strong></h2>
+  <p><big>TRANSLIPSUR es una empresa que brinda servicios de transporte de mercancías en general, cumpliendo estándares de seguridad, bajo lineamiento normativo según DS-005- TR-2014, y la Ley 29783 LEY DE SALUD SEGURIDAD EN EL TRABAJO.Normativas de tránsito como: D.S 016-2009- MTC, Reglamento Nacional de Tránsito, D.S 058-2003-MTC Reglamento Nacional de Vehículos, D.S 049-2000- MTC Reglamento Nacional de responsabilidad civil y seguros obligatorios por accidente de tránsito.Nuestra tarea es prestar servicio de transporte de carga de manera eficiente, manteniendo nuestras unidades motorizadas operativas a fin de prestar un servicio sostenible a través del tiempo.</p></big>
+  <br>
+
+  <h4 align="center"><strong>VISION</strong></h4>
+  <br>
+
+  <p><big>Lograr que TRANSLIPSUR sea una Empresa líder en el Servicio de Transporte de Carga Especializada, con Seguridad, Puntualidad y Eficiencia, logrando presencia competitiva a nivel Nacional e Internacional y buscando volvernos socios estratégicos de nuestros clientes a través de la calidad y seguridad en el servicio.</p></big>
+  <br>
+  <h4 align="center"><strong>MISION</strong></h4>
+
+  <br>
+
+  <p><big>Realizar Operaciones de Transporte y Carga en General, a nivel Nacional e Internacional, atendiendo las necesidades y requerimientos de nuestros clientes, brindando el mejor servicio al mejor precio, con estándares de seguridad, con una extensa gama de servicios, y atención personalizada para garantizar su confianza.</p></big>
+</div>
+
+</div>
+<div class="row">
+<div class="footer-4cln">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-5 col-xs-6">
+                <h6>SERVICIOS</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Transporte de Concentrado</a></li>
+                    <li><a href="#">Transporte de Carga Pesada</a></li>
+                    <li><a href="#">Alquiler de Unidades</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                  <h6>PRODUCTOS</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Máquina Seca</a></li>
+                    <li><a href="#">Máquina Servida</a></li>
+                    <li><a href="#">Máquina Completa</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3 col-xs-6">
+                  <h6>CONTÁCTENOS</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#">+51 958300453</a></li>
+                    <li><a href="#">+51 987654321</a></li>
+                    <li><a href="#">gerencia@translipsur.com</a></li>
+                    
+                  </ul>
+              </div>
+            </div>
+          </div>
+        <div class="col-md-4" align="center">
+            
+            <img src="images/logo-2.png" class="img-rounded" alt="Cinque Terre" width="152" height="100">
+        </div>
+    </div>
+    <hr>
+      <div class="footer-4cln-bar">
+        <div class="footer-social">
+            <a class="social-facebook" href="www.facebook.com"><i class="fa fa-facebook"></i></a>
+            <a class="social-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="social-google" href="#"><i class="fa fa-google-plus"></i></a>
+        </div>
+        <span class="address">Copyright &copy; Translipsur, Inc. 2017<br/> Challhuahuacho - Nueva Fuerabamba, calle 3 Lte V-13</span>
+      </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
